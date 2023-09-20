@@ -1,112 +1,125 @@
+# Week 1 Solution
+
 **1. Setup:**
 
-   - **Set up Git:**
-     - Download and install Git from the official website: https://git-scm.com/downloads.
-     - Open your terminal or command prompt.
-     - Configure Git with your name and email address:
-       ```
+- **Set up Git:**
+  - Download and install Git from the official website: <https://git-scm.com/downloads>.
+  - Open your terminal or command prompt.
+  - Configure Git with your name and email address:
+
+       ```bash
        git config --global user.name "Your Name"
        git config --global user.email "your@email.com"
        ```
 
-   - **Create a GitHub Account:**
-     - Go to https://github.com/ and sign up for a free GitHub account.
+- **Create a GitHub Account:**
+  - Go to <https://github.com/> and sign up for a free GitHub account.
 
-   - **Create a GitHub Repository:**
-     - Log in to your GitHub account.
-     - Click on the '+' sign in the upper right corner and select "New Repository."
-     - Follow the on-screen instructions to create a new repository. Name it "SimpleWebsite."
+- **Fork the Starter Repository:**
+  - Go to the GitHub repository you want to contribute to (the "Week-1").
+  - Click the "Fork" button in the top right corner of the repository page. This will create a copy of the repository under your GitHub account.
+
+- **Clone Your Fork:**
+  - Open your terminal or command prompt.
+  - Clone your forked repository to your local machine using:
+
+       ```bash
+       git clone <your-fork-repository-URL>
+       ```
 
 **2. Initial Commit:**
 
-   - **Create a Folder:**
-     - Create a folder on your local machine where you want to store your project.
+- **Create a Folder:**
+  - Create a folder on your local machine where you want to store your project.
 
-   - **Create an HTML File:**
-     - Inside the project folder, create an HTML file (e.g., `index.html`) using a text editor or code editor of your choice.
-     - Add some basic HTML content to the file.
+- **Create an HTML File:**
+  - Inside the project folder, create an HTML file (e.g., `index.html`) using a text editor or code editor of your choice.
+  - Add some basic HTML content to the file.
 
-   - **Initialize a Git Repository:**
-     - Open your terminal or command prompt.
-     - Navigate to your project folder using the `cd` command.
-     - Initialize a Git repository in the project folder:
-       ```
+- **Initialize a Git Repository:**
+  - Open your terminal or command prompt.
+  - Navigate to your project folder using the `cd` command.
+  - Initialize a Git repository in the project folder:
+
+       ```bash
        git init
        ```
 
-   - **Add and Commit:**
-     - Add the HTML file to the Git repository:
-       ```
+- **Add and Commit:**
+  - Add the HTML file to the Git repository:
+
+       ```bash
        git add index.html
        ```
-     - Commit the changes with a meaningful message:
-       ```
+
+  - Commit the changes with a meaningful message:
+
+       ```bash
        git commit -m "Initial commit"
        ```
 
 **3. Branching:**
 
-   - **Create a New Branch:**
-     - Create a new branch named "feature":
-       ```
+- **Create a New Branch:**
+  - Create a new branch named "feature":
+
+       ```bash
        git branch feature
        ```
 
-   - **Switch to the New Branch:**
-     - Switch to the "feature" branch:
-       ```
+- **Switch to the New Branch:**
+  - Switch to the "feature" branch:
+
+       ```bash
        git checkout feature
        ```
 
-   - **Make Changes:**
-     - Make changes to the `index.html` file in the "feature" branch using a text editor.
+- **Make Changes:**
+  - Make changes to the `index.html` file in the "feature" branch using a text editor.
 
 **4. Merging:**
 
-   - **Switch Back to Main:**
-     - Switch back to the main branch:
-       ```
+- **Switch Back to Main:**
+  - Switch back to the main branch:
+
+       ```bash
        git checkout main
        ```
 
-   - **Merge the Branch:**
-     - Merge the "feature" branch into the main branch:
-       ```
+- **Merge the Branch:**
+  - Merge the "feature" branch into the main branch:
+
+       ```bash
        git merge feature
        ```
 
-**5. Remote Repository:**
+**5. Push to Your Fork on GitHub:**
 
-   - **Link to GitHub:**
-     - Link your local repository to the GitHub repository you created earlier. Replace `<repository URL>` with the URL of your GitHub repository:
-       ```
-       git remote add origin <repository URL>
-       ```
+- **Push to Your Fork:**
+  - Push your local repository to your fork on GitHub:
 
-   - **Push to GitHub:**
-     - Push your local repository to GitHub:
-       ```
-       git push -u origin main
+       ```bash
+       git push origin main
        ```
 
-**6. Pull Requests:**
+**6. Create a Pull Request:**
 
-   - **GitHub Pull Request:**
-     - Go to your GitHub repository in a web browser.
-     - Click on the "Pull Requests" tab.
-     - Click the "New Pull Request" button.
-     - Select "main" as the base branch and "feature" as the compare branch.
-     - Add a description for the Pull Request.
-     - Review the changes and create the Pull Request.
+- **GitHub Pull Request:**
+  - Go to your forked repository on GitHub in a web browser.
+  - Click on the "Pull Requests" tab.
+  - Click the "New Pull Request" button.
+  - Select the base repository's "main" branch as the base branch and your fork's "main" branch as the compare branch.
+  - Add a description for the Pull Request.
+  - Review the changes and create the Pull Request.
 
 **7. Collaboration (Optional):**
 
-   - **Invite Collaborators:**
-     - In your GitHub repository, go to "Settings."
-     - Click on "Collaborators" on the left sidebar.
-     - Invite a friend by entering their GitHub username or email address.
+- **Invite Collaborators:**
+  - In your forked GitHub repository, go to "Settings."
+  - Click on "Collaborators" on the left sidebar.
+  - Invite a friend by entering their GitHub username or email address.
 
-   - **Collaborate:**
-     - Your friend can clone the repository to their local machine using `git clone <repository URL>`.
-     - They can create a branch, make changes, commit, and push to GitHub.
-     - Your friend can then create a Pull Request in the same way as described in step 6.
+- **Collaborate:**
+  - Your friend can fork your repository to their GitHub account.
+  - They can clone their forked repository to their local machine and create a branch, make changes, commit, and push to GitHub.
+  - Your friend can then create a Pull Request from their fork to your repository.
