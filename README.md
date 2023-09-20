@@ -34,19 +34,14 @@ Tasks:
 - Switch back to the main branch using `git checkout main`.
 - Merge the changes from the "feature" branch into the main branch using `git merge feature`.
 
-**5. Remote Repository:**
-
-- Link your local repository to the GitHub repository you created earlier using `git remote add origin <repository URL>`.
-- Push your local repository to GitHub using `git push -u origin main`.
-
-**6. Pull Requests:**
+**5. Pull Requests:**
 
 - Go to the GitHub repository.
 - Create a new Pull Request (PR) to merge the "feature" branch into the main branch.
 - Add a description for the PR.
 - Review the changes and create the PR.
 
-**7. Collaboration (Optional):**
+**6. Collaboration (Optional):**
 
 - Invite a friend to collaborate on the project by adding them as a collaborator on the GitHub repository.
 - Have your friend clone the repository, create a branch, make changes, and create a Pull Request as well.
