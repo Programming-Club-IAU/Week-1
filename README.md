@@ -14,7 +14,7 @@ Tasks:
 1. Setup:
    - Set up Git on your local machine if you haven't already.
    - Create a GitHub account if you don't have one.
-   - Create a new GitHub repository (let's call it "SimpleWebsite").
+   - Fork this repository and clone it to your local machine.
 2. Initial Commit:
    - Create a folder on your local machine for the project.
    - Inside the folder, create an HTML file (e.g., index.html) and add some basic content.
@@ -40,4 +40,3 @@ Tasks:
    - Invite a friend to collaborate on the project by adding them as a collaborator on the GitHub repository.
    - Have your friend clone the repository, create a branch, make changes, and create a Pull Request as well.
    - Review and merge their changes into the main branch.
-  
