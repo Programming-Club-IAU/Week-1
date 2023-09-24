@@ -39,11 +39,15 @@
 - **Initialize a Git Repository:**
   - Open your terminal or command prompt.
   - Navigate to your project folder using the `cd` command.
-  - Initialize a Git repository in the project folder:
+  - Ensure the current directory has a `.git` folder by running:
 
        ```bash
-       git init
+
+       ```bash
+       git status
        ```
+
+  - if it does not have one, make sure you are inside the folder that appeared when you cloned your forked repo!
 
 - **Add and Commit:**
   - Add the HTML file to the Git repository:
