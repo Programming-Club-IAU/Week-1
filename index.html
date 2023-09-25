@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Color Change</title>
+    <style>
+        /* Style for the button */
+        #colorButton {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="colorButton">Change Color</button>
+
+    <script>
+        // JavaScript to change the button color
+        const button = document.getElementById('colorButton');
+
+        button.addEventListener('click', function () {
+            // Check the current background color
+            if (button.style.backgroundColor === 'blue') {
+                // Change the background color to red
+                button.style.backgroundColor = 'red';
+            } else {
+                // Change the background color back to blue
+                button.style.backgroundColor = 'blue';
+            }
+        });
+    </script>
+</body>
+</html>
